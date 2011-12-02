@@ -2,7 +2,11 @@ This is a collection of scripts that I have written for my own personal use.
 
 I do not guarantee usefulness to anyone else. However, if you find them useful, you're more than welcome to go ahead and use them. You can modify them to your liking, whatever. It's cool with me.
 
-SCRIPT				DESCRIPTION
-------				-----------
-nc-wipe-alt-data.sh		Use this for wiping your alternate data partition (/dev/block/mmcblk0p10) on the Nook Color via adb from recovery.
-nc-install-gapps-alt-system.sh	Use this to install the ICS Google Apps to your alternate system partition (/dev/block/mmcblk0p9) on the Nook Color via adb from recovery.
+DETAILS
+-------
+
+nc-install-gapps-alt-system.sh:
+Extract the gapps to a folder on your computer. Copy this file into the folder, so it sits alongside the "system" folder (found within the gapps zip). Execute this program, and it will install the Google Apps to your alternate system partition. This is for IceCreamSandwich only, at the moment. It is recommmended you only use this script while your device is in RECOVERY MODE.
+
+nc-wipe-alt-data.sh:
+Execute this file in place, it will format your alternate /data partition on your Nook Color via adb shell. It is recommended you use this script while your device is in RECOVERY MODE.
